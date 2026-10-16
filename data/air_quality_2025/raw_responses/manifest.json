@@ -1,0 +1,2285 @@
+[
+  {
+    "url": "https://api.openaq.org/v3/locations",
+    "params": {
+      "bbox": "106.689,-6.37,106.978,-6.079",
+      "parameters_id": 2,
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0001.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5047/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0002.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5048/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0003.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0004.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 2
+    },
+    "file": "response_0005.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 3
+    },
+    "file": "response_0006.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 4
+    },
+    "file": "response_0007.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 5
+    },
+    "file": "response_0008.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 6
+    },
+    "file": "response_0009.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0010.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0011.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0012.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0013.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0014.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0015.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0016.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0017.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0018.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0019.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0020.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0021.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0022.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0023.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0024.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0025.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0026.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0027.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0028.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0029.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0030.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0031.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0032.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0033.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0034.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0035.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0036.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0037.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0038.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0039.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0040.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0041.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0042.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0043.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0044.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0045.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0046.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0047.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0048.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0049.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0050.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0051.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0052.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0053.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0054.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0055.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0056.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0057.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0058.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0059.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0060.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0061.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0062.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0063.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0064.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0065.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0066.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0067.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0068.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0069.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0070.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0071.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0072.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0073.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0074.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0075.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0076.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0077.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0078.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0079.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0080.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0081.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0082.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0083.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0084.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0085.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0086.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0087.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0088.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0089.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0090.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0091.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0092.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0093.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0094.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0095.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0096.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0097.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0098.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0099.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0100.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0101.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0102.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0103.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0104.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0105.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0106.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0107.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0108.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0109.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0110.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0111.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0112.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0113.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0114.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0115.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0116.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0117.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0118.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0119.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0120.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0121.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0122.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0123.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0124.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0125.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0126.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0127.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0128.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0129.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0130.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0131.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0132.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0133.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0134.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0135.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0136.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0137.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0138.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0139.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0140.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0141.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0142.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0143.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0144.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0145.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0146.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0147.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0148.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0149.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0150.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0151.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0152.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0153.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0154.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0155.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0156.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0157.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0158.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0159.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0160.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0161.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0162.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0163.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0164.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0165.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0166.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0167.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0168.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0169.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0170.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0171.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0172.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0173.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0174.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0175.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0176.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0177.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0178.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2024-12-31T17:00:00+00:00",
+      "datetime_to": "2025-01-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0179.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-01-30T17:00:00+00:00",
+      "datetime_to": "2025-03-01T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0180.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-03-01T17:00:00+00:00",
+      "datetime_to": "2025-03-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0181.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-03-31T17:00:00+00:00",
+      "datetime_to": "2025-04-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0182.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-04-30T17:00:00+00:00",
+      "datetime_to": "2025-05-30T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0183.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-05-30T17:00:00+00:00",
+      "datetime_to": "2025-06-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0184.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-06-29T17:00:00+00:00",
+      "datetime_to": "2025-07-29T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0185.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-07-29T17:00:00+00:00",
+      "datetime_to": "2025-08-28T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0186.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-08-28T17:00:00+00:00",
+      "datetime_to": "2025-09-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0187.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-09-27T17:00:00+00:00",
+      "datetime_to": "2025-10-27T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0188.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-10-27T17:00:00+00:00",
+      "datetime_to": "2025-11-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0189.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-11-26T17:00:00+00:00",
+      "datetime_to": "2025-12-26T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0190.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2025-12-26T17:00:00+00:00",
+      "datetime_to": "2025-12-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_0191.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors",
+    "params": {
+      "fields": "name,latitude,longitude,location_type",
+      "location_type": 0,
+      "max_age": 0,
+      "nwlat": -6.079,
+      "nwlng": 106.689,
+      "selat": -6.37,
+      "selng": 106.978
+    },
+    "file": "response_0192.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/50867/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0193.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/50867/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0194.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/50867/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0195.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/55391/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0196.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/55391/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0197.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/55391/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0198.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126957/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0199.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126957/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0200.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126957/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0201.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126963/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0202.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126963/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0203.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126963/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0204.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126969/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0205.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126969/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0206.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126969/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0207.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127007/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0208.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127007/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0209.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127007/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0210.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127015/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0211.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127015/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0212.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127015/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0213.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127605/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0214.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127605/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0215.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127605/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0216.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/152230/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0217.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/152230/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0218.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/152230/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0219.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/153466/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0220.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/153466/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0221.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/153466/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0222.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/160583/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0223.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/160583/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0224.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/160583/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0225.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/192275/history",
+    "params": {
+      "start_timestamp": 1735664400,
+      "end_timestamp": 1751216400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0226.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/192275/history",
+    "params": {
+      "start_timestamp": 1751216400,
+      "end_timestamp": 1766768400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0227.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/192275/history",
+    "params": {
+      "start_timestamp": 1766768400,
+      "end_timestamp": 1767200400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_0228.json"
+  }
+]

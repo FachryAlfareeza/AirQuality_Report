@@ -1,0 +1,14 @@
+topic,explanation
+Period,2024-01-01 00:00:00+07:00 inclusive to 2024-02-01 00:00:00+07:00 exclusive
+Workbook,Frozen snapshots of this notebook run. Rerun the notebook to refresh all stages and graphs.
+Raw data,OpenAQ raw and PurpleAir raw preserve extracted measurements. Full API responses are in raw_responses. Weather downloaded preserves the Meteostat returned table.
+Times,Excel timestamps are numeric dates: time is UTC; time_jakarta is Jakarta local time. Raw JSON/CSV keeps timezone offsets.
+Units,PM2.5: µg/m³; temperature: °C; humidity: %; rain: mm per hour; wind_speed: km/h; pressure: hPa; distance: km.
+Row changes,Hourly resampling can add rows. Missing percentages are calculated using each stage's row count.
+Changes,Changes lists common-column value changes and rows added/removed on unique keys. Column additions/removals and aggregation are described in Stages.
+Outliers,"Sensor-specific raw quartiles define 1.5 × IQR bounds, reused for final flags. At least 4 readings and nonzero IQR required. Flags preserve the Final archive; the separate primary PCA cohort excludes flagged IQR extremes."
+PurpleAir,"Raw PM2.5 diagnostic mean requires both channels. Final values require both valid channels and agreement within max(10, 50% of mean). CF1 values are uncalibrated."
+Comparability,Sources have different sensors and coverage. Source means are descriptive and are not a calibrated citywide estimate.
+Missing values,Blank Excel cells represent missing values; zero remains zero. Rainfall and long gaps are not filled.
+Stages,Processing outputs are computed in Python; workbook charts read the exported summary cells.
+PCA,"Primary cohort: explicitly licensed OpenAQ plus Meteostat. Remove sensor-specific IQR extremes, use complete cases, standardize by sample SD, and retain the smallest number of components reaching 95% variance."

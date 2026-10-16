@@ -1,0 +1,11 @@
+# Notebook and preprocessing dependencies
+pandas>=2.2
+numpy
+requests
+meteostat>=2.1
+seaborn>=0.13
+matplotlib
+xlsxwriter>=3.2
+ipykernel
+nbformat
+nbclient

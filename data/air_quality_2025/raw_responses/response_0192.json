@@ -1,0 +1,24 @@
+{
+  "api_version" : "V1.2.3-1.1.45",
+  "time_stamp" : 1790575640,
+  "data_time_stamp" : 1790575631,
+  "location_type" : 0,
+  "max_age" : 0,
+  "firmware_default_version" : "7.02",
+  "fields" : ["sensor_index","name","location_type","latitude","longitude"],
+  "location_types" : ["outside", "inside"],
+  "data" : [
+    [50867,"Kelurahan Galur",0,-6.175558,106.8544],
+    [55391,"Ancol Timur",0,-6.124591,106.85121],
+    [126957,"LTC Glodok",0,-6.146033,106.81614],
+    [126963,"Angkasa-Kemayoran",0,-6.155982,106.84253],
+    [126969,"LTC Glodok",0,-6.146273,106.81632],
+    [127007,"MNS",0,-6.177045,106.82523],
+    [127015,"Me",0,-6.155037,106.84207],
+    [127605,"pradita_smart",0,-6.345547,106.811935],
+    [152230,"Regatta The Icon",0,-6.09474,106.79309],
+    [153466,"RDTX Place",0,-6.223431,106.82169],
+    [160583,"AQMS DKI 2",0,-6.153674,106.91084],
+    [192275,"Jakarta-Selatan-CasaGrande",0,-6.221761,106.84216]
+  ]
+}

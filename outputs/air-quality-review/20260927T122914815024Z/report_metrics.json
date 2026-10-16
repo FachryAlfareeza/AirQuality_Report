@@ -1,0 +1,186 @@
+{
+  "raw_openaq": 3990,
+  "raw_purpleair": 2906,
+  "final_rows": 7511,
+  "final_columns": 22,
+  "hourly_added": 615,
+  "imputed_pm25": 138,
+  "missing_pm25": 1214,
+  "missing_rain": 1488,
+  "source_summary": {
+    "OpenAQ": {
+      "count": 3387,
+      "mean": 32.6081015648,
+      "median": 27.0,
+      "max": 298.0
+    },
+    "PurpleAir": {
+      "count": 2910,
+      "mean": 31.042104811,
+      "median": 23.55,
+      "max": 551.6
+    }
+  },
+  "rejected_purpleair": 1,
+  "primary_rows": 3064,
+  "primary_sites": 6,
+  "iqr_removed": 94,
+  "pca_rows": 1169,
+  "pca_excluded_missing": 1801,
+  "features": [
+    "pm25",
+    "temperature",
+    "humidity",
+    "rain",
+    "wind_speed",
+    "pressure"
+  ],
+  "pca_k": 5,
+  "variance": [
+    0.3808671974257491,
+    0.19113936039986484,
+    0.16589364773356538,
+    0.1568120960472994,
+    0.0980435183890103,
+    0.007244180004510994
+  ],
+  "cumulative": [
+    0.3808671974257491,
+    0.5720065578256139,
+    0.7379002055591793,
+    0.8947123016064787,
+    0.992755819995489,
+    1.0
+  ],
+  "rmse": 0.08507633690498755,
+  "loadings": [
+    {
+      "feature": "pm25",
+      "PC1": 0.20893185024053437,
+      "PC2": 0.7018813067203222,
+      "PC3": -0.1807380196210993,
+      "PC4": 0.37351519951169665,
+      "PC5": 0.5399279698804564,
+      "PC6": -0.002839818583722528
+    },
+    {
+      "feature": "temperature",
+      "PC1": -0.580327067059157,
+      "PC2": 0.29448248356884027,
+      "PC3": 0.33070327078865824,
+      "PC4": 0.014474291312469377,
+      "PC5": -0.05397796805631738,
+      "PC6": 0.681184837364163
+    },
+    {
+      "feature": "humidity",
+      "PC1": 0.619787195831626,
+      "PC2": -0.20606396597155852,
+      "PC3": -0.22350899540681785,
+      "PC4": -0.00028490509161087363,
+      "PC5": -0.042783479851289774,
+      "PC6": 0.7222289771702465
+    },
+    {
+      "feature": "rain",
+      "PC1": 0.161965029053198,
+      "PC2": -0.24685688289476404,
+      "PC3": 0.5477465085391517,
+      "PC4": 0.7756807814182773,
+      "PC5": -0.09526060402035816,
+      "PC6": -0.04524946159297581
+    },
+    {
+      "feature": "wind_speed",
+      "PC1": -0.35213482838136656,
+      "PC2": -0.5628358778956428,
+      "PC3": -0.23633020658099868,
+      "PC4": 0.15170903486027484,
+      "PC5": 0.6844365058477806,
+      "PC6": 0.10906836780796425
+    },
+    {
+      "feature": "pressure",
+      "PC1": 0.2918907348330456,
+      "PC2": -0.021396121066541127,
+      "PC3": 0.6724095773900854,
+      "PC4": -0.485366360117718,
+      "PC5": 0.47561100380631627,
+      "PC6": -0.020519129621969435
+    }
+  ],
+  "sensitivity": [
+    {
+      "cohort": "Complete cases without IQR removal",
+      "rows": 1225,
+      "components_95pct": 5,
+      "pc1_fraction": 0.3773055693295982
+    },
+    {
+      "cohort": "Complete cases after IQR removal",
+      "rows": 1169,
+      "components_95pct": 5,
+      "pc1_fraction": 0.3808671974257491
+    }
+  ],
+  "weather_corr": {
+    "temperature": {
+      "temperature": 1.0,
+      "humidity": -0.9305466268814812,
+      "rain": -0.1378050395681877,
+      "wind_speed": 0.33680118229687506,
+      "pressure": -0.2828262083815572
+    },
+    "humidity": {
+      "temperature": -0.9305466268814812,
+      "humidity": 1.0,
+      "rain": 0.198619752293591,
+      "wind_speed": -0.4714545228242406,
+      "pressure": 0.2824641026598198
+    },
+    "rain": {
+      "temperature": -0.1378050395681877,
+      "humidity": 0.198619752293591,
+      "rain": 1.0,
+      "wind_speed": -0.04492364166052504,
+      "pressure": 0.09467183647061148
+    },
+    "wind_speed": {
+      "temperature": 0.33680118229687506,
+      "humidity": -0.4714545228242406,
+      "rain": -0.04492364166052504,
+      "wind_speed": 1.0,
+      "pressure": -0.24116914781932788
+    },
+    "pressure": {
+      "temperature": -0.2828262083815572,
+      "humidity": 0.2824641026598198,
+      "rain": 0.09467183647061148,
+      "wind_speed": -0.24116914781932788,
+      "pressure": 1.0
+    }
+  },
+  "distance_min": 0.13,
+  "distance_max": 13.93,
+  "dropped_correlated": [],
+  "graph_files": [
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\01_pm25_boxplots.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\02_purpleair_channels.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\03_raw_outliers_over_time.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\04_missingness.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\05_interpolation.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\06_weather_merge.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\07_final_time_series.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\08_pca_variance_loadings.png",
+    "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z\\graphs\\09_pca_scores.png"
+  ],
+  "output_dir": "D:\\Coding\\RekayasaData\\outputs\\air-quality-review\\20260927T122914815024Z",
+  "packages": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "meteostat": "2.1.5",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "xlsxwriter": "3.2.9"
+  }
+}

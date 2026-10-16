@@ -1,0 +1,184 @@
+stage,column,rows,missing,missing_fraction
+OpenAQ raw,time,3990,0,0.0
+OpenAQ raw,source,3990,0,0.0
+OpenAQ raw,site_id,3990,0,0.0
+OpenAQ raw,latitude,3990,0,0.0
+OpenAQ raw,longitude,3990,0,0.0
+OpenAQ raw,pm25,3990,736,0.18446115288220552
+PurpleAir raw,time_stamp,2906,0,0.0
+PurpleAir raw,pm2.5_cf_1_a,2906,0,0.0
+PurpleAir raw,pm2.5_cf_1_b,2906,0,0.0
+PurpleAir raw,time,2906,0,0.0
+PurpleAir raw,source,2906,0,0.0
+PurpleAir raw,site_id,2906,0,0.0
+PurpleAir raw,latitude,2906,0,0.0
+PurpleAir raw,longitude,2906,0,0.0
+Weather downloaded,station,2980,0,0.0
+Weather downloaded,time,2980,0,0.0
+Weather downloaded,temp,2980,0,0.0
+Weather downloaded,rhum,2980,0,0.0
+Weather downloaded,prcp,2980,745,0.25
+Weather downloaded,snwd,2980,2980,1.0
+Weather downloaded,wdir,2980,0,0.0
+Weather downloaded,wspd,2980,0,0.0
+Weather downloaded,wpgt,2980,2980,1.0
+Weather downloaded,pres,2980,0,0.0
+Weather downloaded,tsun,2980,2980,1.0
+Weather downloaded,cldc,2980,0,0.0
+Weather downloaded,coco,2980,285,0.09563758389261745
+Stations downloaded,id,5,0,0.0
+Stations downloaded,name,5,0,0.0
+Stations downloaded,country,5,0,0.0
+Stations downloaded,region,5,0,0.0
+Stations downloaded,latitude,5,0,0.0
+Stations downloaded,longitude,5,0,0.0
+Stations downloaded,elevation,5,0,0.0
+Stations downloaded,timezone,5,0,0.0
+Stations downloaded,distance,5,0,0.0
+Weather raw,station_id,2976,0,0.0
+Weather raw,time,2976,0,0.0
+Weather raw,temperature,2976,0,0.0
+Weather raw,humidity,2976,0,0.0
+Weather raw,rain,2976,744,0.25
+Weather raw,snwd,2976,2976,1.0
+Weather raw,wdir,2976,0,0.0
+Weather raw,wind_speed,2976,0,0.0
+Weather raw,wpgt,2976,2976,1.0
+Weather raw,pressure,2976,0,0.0
+Weather raw,tsun,2976,2976,1.0
+Weather raw,cldc,2976,0,0.0
+Weather raw,coco,2976,285,0.09576612903225806
+Weather bounded,station_id,2976,0,0.0
+Weather bounded,time,2976,0,0.0
+Weather bounded,temperature,2976,0,0.0
+Weather bounded,humidity,2976,0,0.0
+Weather bounded,rain,2976,744,0.25
+Weather bounded,snwd,2976,2976,1.0
+Weather bounded,wdir,2976,0,0.0
+Weather bounded,wind_speed,2976,0,0.0
+Weather bounded,wpgt,2976,2976,1.0
+Weather bounded,pressure,2976,0,0.0
+Weather bounded,tsun,2976,2976,1.0
+Weather bounded,cldc,2976,0,0.0
+Weather bounded,coco,2976,285,0.09576612903225806
+Weather prepared,time,2976,0,0.0
+Weather prepared,station_id,2976,0,0.0
+Weather prepared,temperature,2976,0,0.0
+Weather prepared,humidity,2976,0,0.0
+Weather prepared,rain,2976,744,0.25
+Weather prepared,snwd,2976,2976,1.0
+Weather prepared,wdir,2976,0,0.0
+Weather prepared,wind_speed,2976,0,0.0
+Weather prepared,wpgt,2976,2976,1.0
+Weather prepared,pressure,2976,0,0.0
+Weather prepared,tsun,2976,2976,1.0
+Weather prepared,cldc,2976,0,0.0
+Weather prepared,coco,2976,285,0.09576612903225806
+Weather prepared,temperature_imputed,2976,0,0.0
+Weather prepared,humidity_imputed,2976,0,0.0
+Weather prepared,rain_imputed,2976,0,0.0
+Weather prepared,wind_speed_imputed,2976,0,0.0
+Weather prepared,pressure_imputed,2976,0,0.0
+OpenAQ cleaned,time,3990,0,0.0
+OpenAQ cleaned,source,3990,0,0.0
+OpenAQ cleaned,site_id,3990,0,0.0
+OpenAQ cleaned,latitude,3990,0,0.0
+OpenAQ cleaned,longitude,3990,0,0.0
+OpenAQ cleaned,pm25,3990,736,0.18446115288220552
+PurpleAir cleaned,time,2906,0,0.0
+PurpleAir cleaned,source,2906,0,0.0
+PurpleAir cleaned,site_id,2906,0,0.0
+PurpleAir cleaned,latitude,2906,0,0.0
+PurpleAir cleaned,longitude,2906,0,0.0
+PurpleAir cleaned,pm25,2906,1,0.00034411562284927734
+Air combined,time,6896,0,0.0
+Air combined,source,6896,0,0.0
+Air combined,site_id,6896,0,0.0
+Air combined,latitude,6896,0,0.0
+Air combined,longitude,6896,0,0.0
+Air combined,pm25,6896,737,0.10687354988399073
+Air filtered,time,6896,0,0.0
+Air filtered,source,6896,0,0.0
+Air filtered,site_id,6896,0,0.0
+Air filtered,latitude,6896,0,0.0
+Air filtered,longitude,6896,0,0.0
+Air filtered,pm25,6896,737,0.10687354988399073
+Air hourly,source,7511,0,0.0
+Air hourly,site_id,7511,0,0.0
+Air hourly,latitude,7511,0,0.0
+Air hourly,longitude,7511,0,0.0
+Air hourly,time,7511,0,0.0
+Air hourly,pm25,7511,1352,0.18000266276128346
+Air filled,source,7511,0,0.0
+Air filled,site_id,7511,0,0.0
+Air filled,latitude,7511,0,0.0
+Air filled,longitude,7511,0,0.0
+Air filled,time,7511,0,0.0
+Air filled,pm25,7511,1214,0.16162960990547198
+Air filled,pm25_imputed,7511,0,0.0
+Station links,site_id,12,0,0.0
+Station links,station_id,12,0,0.0
+Station links,distance_to_weather_km,12,0,0.0
+Merged,source,7511,0,0.0
+Merged,site_id,7511,0,0.0
+Merged,latitude,7511,0,0.0
+Merged,longitude,7511,0,0.0
+Merged,time,7511,0,0.0
+Merged,pm25,7511,1214,0.16162960990547198
+Merged,pm25_imputed,7511,0,0.0
+Merged,station_id,7511,0,0.0
+Merged,distance_to_weather_km,7511,0,0.0
+Merged,temperature,7511,0,0.0
+Merged,humidity,7511,0,0.0
+Merged,rain,7511,1488,0.19810943948874984
+Merged,wind_speed,7511,0,0.0
+Merged,pressure,7511,0,0.0
+Merged,temperature_imputed,7511,0,0.0
+Merged,humidity_imputed,7511,0,0.0
+Merged,rain_imputed,7511,0,0.0
+Merged,wind_speed_imputed,7511,0,0.0
+Merged,pressure_imputed,7511,0,0.0
+Time features,source,7511,0,0.0
+Time features,site_id,7511,0,0.0
+Time features,latitude,7511,0,0.0
+Time features,longitude,7511,0,0.0
+Time features,time,7511,0,0.0
+Time features,pm25,7511,1214,0.16162960990547198
+Time features,pm25_imputed,7511,0,0.0
+Time features,station_id,7511,0,0.0
+Time features,distance_to_weather_km,7511,0,0.0
+Time features,temperature,7511,0,0.0
+Time features,humidity,7511,0,0.0
+Time features,rain,7511,1488,0.19810943948874984
+Time features,wind_speed,7511,0,0.0
+Time features,pressure,7511,0,0.0
+Time features,temperature_imputed,7511,0,0.0
+Time features,humidity_imputed,7511,0,0.0
+Time features,rain_imputed,7511,0,0.0
+Time features,wind_speed_imputed,7511,0,0.0
+Time features,pressure_imputed,7511,0,0.0
+Time features,time_jakarta,7511,0,0.0
+Time features,hour,7511,0,0.0
+Time features,day_of_week,7511,0,0.0
+Final,source,7511,0,0.0
+Final,site_id,7511,0,0.0
+Final,latitude,7511,0,0.0
+Final,longitude,7511,0,0.0
+Final,time,7511,0,0.0
+Final,pm25,7511,1214,0.16162960990547198
+Final,pm25_imputed,7511,0,0.0
+Final,station_id,7511,0,0.0
+Final,distance_to_weather_km,7511,0,0.0
+Final,temperature,7511,0,0.0
+Final,humidity,7511,0,0.0
+Final,rain,7511,1488,0.19810943948874984
+Final,wind_speed,7511,0,0.0
+Final,pressure,7511,0,0.0
+Final,temperature_imputed,7511,0,0.0
+Final,humidity_imputed,7511,0,0.0
+Final,rain_imputed,7511,0,0.0
+Final,wind_speed_imputed,7511,0,0.0
+Final,pressure_imputed,7511,0,0.0
+Final,time_jakarta,7511,0,0.0
+Final,hour,7511,0,0.0
+Final,day_of_week,7511,0,0.0

@@ -1,0 +1,22 @@
+stage,previous,rows,columns,missing_cells,exact_duplicate_rows,rows_delta,added_columns,removed_columns,note
+OpenAQ raw,,3990,6,736,0,,,,Downloaded PM2.5 values before cleaning; full responses are archived separately.
+PurpleAir raw,,2906,8,0,0,,,,Downloaded channel values before cleaning; full responses are archived separately.
+Weather downloaded,,2980,13,9970,0,,,,Meteostat returned values before column renaming and time filtering.
+Stations downloaded,,5,9,0,0,,,,Original Meteostat station metadata.
+Weather raw,,2976,13,9957,0,,,,Names standardized and requested date interval selected; measurements unchanged.
+Weather bounded,Weather raw,2976,13,9957,0,0.0,,,Measurements outside the existing physical limits become missing.
+Weather prepared,Weather bounded,2976,18,9957,0,0.0,"humidity_imputed, pressure_imputed, rain_imputed, temperature_imputed, wind_speed_imputed",,Hourly grid; bounded gaps of at most 3 hours filled except rainfall.
+PurpleAir mean,PurpleAir raw,2906,9,0,0,0.0,pm25,,"Unvalidated mean derived from both raw channels, before range and agreement checks."
+OpenAQ cleaned,OpenAQ raw,3990,6,736,0,0.0,,,Exact duplicates removed; timestamp/numeric types parsed; PM2.5 outside 0–1000 becomes missing.
+PurpleAir cleaned,PurpleAir mean,2906,6,1,0,0.0,,"pm2.5_cf_1_a, pm2.5_cf_1_b, time_stamp","Exact duplicates removed; both channels must be valid and agree within max(10, 50% of their mean)."
+Air combined,,6896,6,737,0,,,,Cleaned source tables concatenated before location and date filtering.
+Air filtered,Air combined,6896,6,737,0,0.0,,,Rows without valid keys/coordinates or outside the area/period are removed.
+Air hourly,Air filtered,7511,6,1352,0,615.0,,,Per-sensor hourly means; absent hours between first and last observations are added as missing.
+Air filled,Air hourly,7511,7,1214,0,0.0,pm25_imputed,,Only complete internal PM2.5 gaps of at most 2 hours are interpolated.
+Station links,,12,3,0,0,,,,Nearest station with usable weather; distance in kilometres.
+Merged,Air filled,7511,19,2702,0,0.0,"distance_to_weather_km, humidity, humidity_imputed, pressure, pressure_imputed, rain, rain_imputed, station_id, temperature, temperature_imputed, wind_speed, wind_speed_imputed",,Hourly air and weather joined by station and UTC time.
+Time features,Merged,7511,22,2702,0,0.0,"day_of_week, hour, time_jakarta",,"Jakarta timestamp, hour and weekday added (Monday=0)."
+Final,Time features,7511,22,2702,0,0.0,,,Weather columns with absolute correlation >0.95 removed; rows sorted. Removed: none
+Primary open data,Final,3064,22,1842,0,-4447.0,,,"OpenAQ sensors with explicit permissive license metadata, joined to Meteostat."
+Outlier filtered,Primary open data,2970,22,1804,0,-94.0,,,Sensor-specific 1.5 × IQR extremes removed for typical-condition PCA only; original high readings remain in Final.
+PCA complete cases,Outlier filtered,1169,22,0,0,-1801.0,,,Only rows observed or short-gap-imputed in every selected numerical feature enter PCA.

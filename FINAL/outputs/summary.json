@@ -1,0 +1,80 @@
+{
+  "shape": [
+    6159,
+    12
+  ],
+  "missing": {
+    "source": 0,
+    "site_id": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "time": 0,
+    "pm25": 0,
+    "station_id": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "rain": 0,
+    "wind_speed": 0,
+    "pressure": 0
+  },
+  "source_summary": {
+    "count": {
+      "OpenAQ": 3254,
+      "PurpleAir": 2905
+    },
+    "mean": {
+      "OpenAQ": 32.25,
+      "PurpleAir": 31.016
+    },
+    "median": {
+      "OpenAQ": 26.85,
+      "PurpleAir": 23.55
+    },
+    "min": {
+      "OpenAQ": 0.6,
+      "PurpleAir": 0.7
+    },
+    "max": {
+      "OpenAQ": 298.0,
+      "PurpleAir": 551.6
+    }
+  },
+  "correlation": {
+    "temperature": {
+      "temperature": 1.0,
+      "humidity": -0.95,
+      "rain": -0.141,
+      "wind_speed": 0.163,
+      "pressure": -0.256
+    },
+    "humidity": {
+      "temperature": -0.95,
+      "humidity": 1.0,
+      "rain": 0.19,
+      "wind_speed": -0.3,
+      "pressure": 0.256
+    },
+    "rain": {
+      "temperature": -0.141,
+      "humidity": 0.19,
+      "rain": 1.0,
+      "wind_speed": -0.007,
+      "pressure": 0.078
+    },
+    "wind_speed": {
+      "temperature": 0.163,
+      "humidity": -0.3,
+      "rain": -0.007,
+      "wind_speed": 1.0,
+      "pressure": -0.186
+    },
+    "pressure": {
+      "temperature": -0.256,
+      "humidity": 0.256,
+      "rain": 0.078,
+      "wind_speed": -0.186,
+      "pressure": 1.0
+    }
+  },
+  "dropped": []
+}

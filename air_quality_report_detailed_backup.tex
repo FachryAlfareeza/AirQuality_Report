@@ -1,0 +1,273 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,booktabs,array,xcolor,hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.16}
+\definecolor{blue}{RGB}{40,120,181}
+\definecolor{orange}{RGB}{217,95,2}
+\pagestyle{plain}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Jakarta Air Quality}\[5pt]
+{\large A reproducible preprocessing and PCA study}\[5pt]
+January 2024 observations\quad\textbar\quad Rekayasa Data
+\end{center}
+
+\section*{1. Dataset description and justification}
+\textbf{Research question.} How do quality checks, hourly alignment and weather integration change the usable Jakarta PM$_{2.5}$ observations, and how compactly can principal component analysis (PCA) represent their joint variation?
+
+The study selects observations inside longitude 106.689--106.978 and latitude $-6.370$--$-6.079$, from 1 January 2024 at 00:00 to 1 February 2024 at 00:00 in Jakarta time. The interval includes its start and excludes its end. UTC is used for joins; local time is used for interpretation.
+
+\begin{center}\begin{tabular}{p{2.5cm}rp{9cm}}\toprule
+Source & Records & Content and role \\\midrule
+OpenAQ & 3,990 & Original PM$_{2.5}$ observations from eight contributing sensors. Includes several providers and sensor technologies. \\
+PurpleAir & 2,906 & Public outdoor sensor history, with channels A and B; supplementary source comparison. \\
+Meteostat & 2,976 & Weather station-hours in the target interval, from four stations with data; five stations were discovered. \\\bottomrule
+\end{tabular}\end{center}
+
+\textbf{Why this dataset?} Multiple schemas, missing measurements, disagreement between instrument channels, irregular coverage and distinct spatial supports require real preprocessing. A month-long local selection is small enough to inspect while retaining temporal and spatial variation. No synthetic measurements are added except explicitly flagged short-gap interpolation.
+
+\textbf{Open-data scope.} The primary PCA cohort contains only OpenAQ records whose location metadata explicitly specifies US Public Domain, CC0 1.0 or CC BY 4.0, combined with Meteostat weather. It initially has 3,064 sensor-hours from six sensors. Other OpenAQ providers with unstated licenses and PurpleAir remain supplementary in the audit. API accessibility is not assumed to establish an open license. Provider names and license labels are exported in the source catalog. [1--4]
+
+\textbf{Originality and provenance.} The exact region, month, licensed subset, weather matching and stage audit define this project's selection. Uniqueness relative to classmates still requires confirmation through the class register. Archived responses were retrieved in September 2026; observation dates are January 2024. The supplied assignment's 2025 deadline is historical, and this report does not claim an earlier submission date.
+
+\newpage
+\section*{2. Cleaning and before/after changes}
+Exact duplicate rows are checked first. Numeric values and timestamps are parsed explicitly. PM$_{2.5}$ outside 0--1,000 $\mu$g/m$^3$ is marked missing. This is a coarse plausibility rule, not a health threshold. PurpleAir requires two valid channels and
+\[
+ |A-B|\leq\max\{10,\;0.5(A+B)/2\}.
+\]
+The channel tolerance is a transparent project heuristic, not a validated local calibration. It rejects one available channel pair. OpenAQ values are not assumed to be uniformly reference-grade. Valid high pollution episodes remain in the all-source archive.
+
+Weather limits are $-30$--60 $^\circ$C, 0--100\% relative humidity, 0--500 mm hourly rain, 0--250 km/h wind and 850--1,100 hPa pressure. No available weather measurement is changed by these bounds in this run. Rows outside the selected interval/area or without a usable key are excluded; none of the combined air rows required that exclusion here.
+
+\begin{center}\begin{tabular}{lrr}\toprule
+Stage & Rows & Missing PM$_{2.5}$ \\\midrule
+Combined, cleaned sources & 6,896 & 737 \\
+Hourly grid before filling & 7,511 & 1,352 \\
+Hourly grid after filling & 7,511 & 1,214 \\
+Weather-integrated final table & 7,511 & 1,214 \\\bottomrule
+\end{tabular}\end{center}
+
+\begin{center}\setlength{\unitlength}{1pt}\begin{picture}(450,185)
+\put(40,30){\line(1,0){390}}\put(40,30){\line(0,1){130}}
+\put(0,170){\small Missing PM$_{2.5}$ (percent)}
+\put(8,27){\makebox(25,10)[r]{\scriptsize 0}}
+\put(8,53){\makebox(25,10)[r]{\scriptsize 4}}
+\put(8,79){\makebox(25,10)[r]{\scriptsize 8}}
+\put(8,105){\makebox(25,10)[r]{\scriptsize 12}}
+\put(8,131){\makebox(25,10)[r]{\scriptsize 16}}
+\put(8,157){\makebox(25,10)[r]{\scriptsize 20}}
+\put(58.00,30){\color{blue}\rule{65.33pt}{69.47pt}}
+\put(50.00,104.47){\makebox(81.33,10){\scriptsize 10.7}}
+\put(46.00,13){\makebox(89.33,10){\scriptsize Combined}}
+\put(174.67,30){\color{blue}\rule{65.33pt}{117.00pt}}
+\put(166.67,152.00){\makebox(81.33,10){\scriptsize 18.0}}
+\put(162.67,13){\makebox(89.33,10){\scriptsize Hourly}}
+\put(291.33,30){\color{blue}\rule{65.33pt}{105.06pt}}
+\put(283.33,140.06){\makebox(81.33,10){\scriptsize 16.2}}
+\put(279.33,13){\makebox(89.33,10){\scriptsize Filled}}
+\end{picture}\end{center}
+\textbf{Interpretation.} Resampling adds 615 absent sensor-hours between each sensor's first and last records. It exposes missing observations rather than creating new observed data. Linear interpolation fills 138 complete internal runs of at most two missing hours. Longer and edge gaps remain missing. The final missing fraction is 16.16\%, down from 18.00\% on the same hourly grid; the initial 10.69\% uses a smaller denominator.
+
+Weather is separately reindexed by station. Bounded gaps up to three hours can be interpolated, except rainfall; none are filled in this snapshot. The integrated table retains 1,488 missing rainfall values (19.81\%). Missing rainfall is not treated as zero.
+
+\newpage
+\section*{3. Integration and redundant attributes}
+Each air sensor is assigned to the nearest weather station that has usable observations in the period. Great-circle (Haversine) distance uses coordinates in radians and Earth radius 6,371 km. Distances range from 0.13 to 13.93 km. The assignment is fixed by location rather than changed hour by hour.
+
+Air and weather are joined on the assigned station identifier and UTC hour. Both joins validate a many-to-one relationship, preventing duplicate weather records from multiplying air records. The resulting 7,511 rows and 22 columns include source identifiers, weather, distances, imputation flags and Jakarta-time features. No duplicate source--sensor--hour remains.
+
+\textbf{Redundancy test.} Pearson correlations are computed on distinct station-hours so stations linked to several air sensors are not repeatedly counted. Attributes would be dropped when an earlier attribute has absolute correlation greater than 0.95. No pair crosses that threshold. In particular, temperature and humidity are strongly negatively correlated ($r=-0.931$), but retaining both is consistent with the stated cutoff.
+
+\begin{center}\begin{tabular}{lr}\toprule
+Weather pair & Pearson $r$ \\\midrule
+Temperature--humidity & $-0.931$ \\
+Humidity--wind speed & $-0.471$ \\
+Temperature--wind speed & $0.337$ \\
+Humidity--rain & $0.199$ \\
+Rain--wind speed & $-0.045$ \\\bottomrule
+\end{tabular}\end{center}
+
+\begin{center}\setlength{\unitlength}{1pt}\begin{picture}(455,185)
+\put(38,28){\line(1,0){390}}\put(38,28){\line(0,1){135}}
+\put(0,171){\small Daily PM$_{2.5}$ mean ($\mu$g/m$^3$)}
+\put(4,25){\makebox(28,10)[r]{\scriptsize 0}}
+\put(4,55){\makebox(28,10)[r]{\scriptsize 20}}
+\put(4,85){\makebox(28,10)[r]{\scriptsize 40}}
+\put(4,115){\makebox(28,10)[r]{\scriptsize 60}}
+\put(4,145){\makebox(28,10)[r]{\scriptsize 80}}
+\put(26.0,12){\scriptsize 1 Jan}
+\put(113.5,12){\scriptsize 8 Jan}
+\put(201.0,12){\scriptsize 15 Jan}
+\put(288.5,12){\scriptsize 22 Jan}
+\put(401.0,12){\scriptsize 31 Jan}
+\color{blue}
+\qbezier(38.00,131.97)(44.25,106.86)(50.50,81.74)
+\qbezier(50.50,81.74)(56.75,81.26)(63.00,80.77)
+\qbezier(63.00,80.77)(69.25,81.12)(75.50,81.46)
+\qbezier(75.50,81.46)(81.75,81.13)(88.00,80.80)
+\qbezier(88.00,80.80)(94.25,90.09)(100.50,99.38)
+\qbezier(100.50,99.38)(106.75,104.17)(113.00,108.97)
+\qbezier(113.00,108.97)(119.25,98.77)(125.50,88.56)
+\qbezier(125.50,88.56)(131.75,93.25)(138.00,97.94)
+\qbezier(138.00,97.94)(144.25,96.95)(150.50,95.97)
+\qbezier(150.50,95.97)(156.75,83.35)(163.00,70.72)
+\qbezier(163.00,70.72)(169.25,66.58)(175.50,62.44)
+\qbezier(175.50,62.44)(181.75,66.33)(188.00,70.22)
+\qbezier(188.00,70.22)(194.25,73.17)(200.50,76.13)
+\qbezier(200.50,76.13)(206.75,78.37)(213.00,80.62)
+\qbezier(213.00,80.62)(219.25,70.13)(225.50,59.65)
+\qbezier(225.50,59.65)(231.75,66.82)(238.00,73.98)
+\qbezier(238.00,73.98)(244.25,67.98)(250.50,61.97)
+\qbezier(250.50,61.97)(256.75,55.26)(263.00,48.55)
+\qbezier(263.00,48.55)(269.25,53.76)(275.50,58.98)
+\qbezier(275.50,58.98)(281.75,59.69)(288.00,60.41)
+\qbezier(288.00,60.41)(294.25,58.75)(300.50,57.09)
+\qbezier(300.50,57.09)(306.75,59.14)(313.00,61.18)
+\qbezier(313.00,61.18)(319.25,60.90)(325.50,60.62)
+\qbezier(325.50,60.62)(331.75,63.94)(338.00,67.27)
+\qbezier(338.00,67.27)(344.25,70.20)(350.50,73.13)
+\qbezier(350.50,73.13)(356.75,67.72)(363.00,62.31)
+\qbezier(363.00,62.31)(369.25,66.42)(375.50,70.53)
+\qbezier(375.50,70.53)(381.75,75.77)(388.00,81.01)
+\qbezier(388.00,81.01)(394.25,80.96)(400.50,80.90)
+\qbezier(400.50,80.90)(406.75,77.83)(413.00,74.75)
+\color{orange}
+\qbezier(38.00,157.03)(44.25,119.43)(50.50,81.82)
+\qbezier(50.50,81.82)(56.75,92.19)(63.00,102.57)
+\qbezier(63.00,102.57)(69.25,84.83)(75.50,67.10)
+\qbezier(75.50,67.10)(81.75,72.43)(88.00,77.76)
+\qbezier(88.00,77.76)(94.25,96.13)(100.50,114.51)
+\qbezier(100.50,114.51)(106.75,117.24)(113.00,119.98)
+\qbezier(113.00,119.98)(119.25,94.13)(125.50,68.27)
+\qbezier(125.50,68.27)(131.75,78.56)(138.00,88.85)
+\qbezier(138.00,88.85)(144.25,92.58)(150.50,96.31)
+\qbezier(150.50,96.31)(156.75,77.15)(163.00,57.98)
+\qbezier(163.00,57.98)(169.25,58.48)(175.50,58.98)
+\qbezier(175.50,58.98)(181.75,60.66)(188.00,62.35)
+\qbezier(188.00,62.35)(194.25,69.88)(200.50,77.42)
+\qbezier(200.50,77.42)(206.75,79.03)(213.00,80.64)
+\qbezier(213.00,80.64)(219.25,67.06)(225.50,53.49)
+\qbezier(225.50,53.49)(231.75,64.73)(238.00,75.97)
+\qbezier(238.00,75.97)(244.25,65.38)(250.50,54.79)
+\qbezier(250.50,54.79)(256.75,51.30)(263.00,47.81)
+\qbezier(263.00,47.81)(269.25,49.66)(275.50,51.51)
+\qbezier(275.50,51.51)(281.75,51.98)(288.00,52.45)
+\qbezier(288.00,52.45)(294.25,52.59)(300.50,52.73)
+\qbezier(300.50,52.73)(306.75,53.83)(313.00,54.94)
+\qbezier(313.00,54.94)(319.25,54.96)(325.50,54.98)
+\qbezier(325.50,54.98)(331.75,61.68)(338.00,68.39)
+\qbezier(338.00,68.39)(344.25,69.14)(350.50,69.89)
+\qbezier(350.50,69.89)(356.75,66.72)(363.00,63.54)
+\qbezier(363.00,63.54)(369.25,73.22)(375.50,82.90)
+\qbezier(375.50,82.90)(381.75,75.61)(388.00,68.31)
+\qbezier(388.00,68.31)(394.25,77.99)(400.50,87.68)
+\qbezier(400.50,87.68)(406.75,85.85)(413.00,84.02)
+\color{black}\put(280,165){\scriptsize\textcolor{blue}{OpenAQ}\quad\textcolor{orange}{PurpleAir}}
+\end{picture}\end{center}
+\textbf{Observed temporal pattern.} Both source series show elevated daily means near the start of the month and lower values through much of the middle of the month, with later increases. These are descriptive averages of available sensor-hours, including flagged imputations. Coverage and locations differ by source; the plot is not a calibrated comparison or a citywide exposure estimate. The notebook separately plots hourly reporting counts so changes in means can be assessed alongside coverage.
+
+\newpage
+\section*{4. Outlier removal and dimensionality reduction}
+For the primary open-data cohort, fixed per-sensor quartiles are estimated from the raw PM$_{2.5}$ series. Bounds are $Q_1-1.5\,\mathrm{IQR}$ and $Q_3+1.5\,\mathrm{IQR}$, requiring at least four readings and nonzero IQR. The same bounds flag raw and processed records. Of 3,064 primary sensor-hours, 94 extremes are excluded from a separate typical-condition PCA cohort. This removes statistical extremes for this analysis without deleting them from the final integration archive.
+
+After this step, 1,801 additional rows lack at least one selected feature, leaving 1,169 complete rows. Rainfall coverage is a material restriction: only five of the six primary sensors remain, and one sensor supplies 717 rows. This is a selected cohort, not an unbiased sample of Jakarta conditions.
+
+Six features enter PCA: PM$_{2.5}$, temperature, humidity, rain, wind speed and pressure. Each is centered and divided by its sample standard deviation:
+\[
+ Z_{ij}=\frac{X_{ij}-\bar X_j}{s_j},\qquad
+ Z=U\Sigma V^\mathsf{T},\qquad
+ \lambda_j=\frac{\Sigma_{jj}^2}{n-1}.
+\]
+PCA scores are $ZV$; explained variance is $\lambda_j/\sum_k\lambda_k$. Standardization prevents variables with larger units from dominating. The standardized covariance matrix, scaling parameters, component coefficients and scores are exported. Identifier and time fields are not PCA inputs.
+
+\begin{center}\setlength{\unitlength}{1pt}\begin{picture}(450,185)
+\put(40,30){\line(1,0){390}}\put(40,30){\line(0,1){130}}
+\put(0,170){\small Explained variance (percent)}
+\put(8,27){\makebox(25,10)[r]{\scriptsize 0}}
+\put(8,53){\makebox(25,10)[r]{\scriptsize 10}}
+\put(8,79){\makebox(25,10)[r]{\scriptsize 20}}
+\put(8,105){\makebox(25,10)[r]{\scriptsize 30}}
+\put(8,131){\makebox(25,10)[r]{\scriptsize 40}}
+\put(8,157){\makebox(25,10)[r]{\scriptsize 50}}
+\put(58.00,30){\color{blue}\rule{32.67pt}{99.03pt}}
+\put(50.00,134.03){\makebox(48.67,10){\scriptsize 38.1}}
+\put(46.00,13){\makebox(56.67,10){\scriptsize PC1}}
+\put(116.33,30){\color{blue}\rule{32.67pt}{49.70pt}}
+\put(108.33,84.70){\makebox(48.67,10){\scriptsize 19.1}}
+\put(104.33,13){\makebox(56.67,10){\scriptsize PC2}}
+\put(174.67,30){\color{blue}\rule{32.67pt}{43.13pt}}
+\put(166.67,78.13){\makebox(48.67,10){\scriptsize 16.6}}
+\put(162.67,13){\makebox(56.67,10){\scriptsize PC3}}
+\put(233.00,30){\color{blue}\rule{32.67pt}{40.77pt}}
+\put(225.00,75.77){\makebox(48.67,10){\scriptsize 15.7}}
+\put(221.00,13){\makebox(56.67,10){\scriptsize PC4}}
+\put(291.33,30){\color{blue}\rule{32.67pt}{25.49pt}}
+\put(283.33,60.49){\makebox(48.67,10){\scriptsize 9.8}}
+\put(279.33,13){\makebox(56.67,10){\scriptsize PC5}}
+\put(349.67,30){\color{blue}\rule{32.67pt}{1.88pt}}
+\put(341.67,36.88){\makebox(48.67,10){\scriptsize 0.7}}
+\put(337.67,13){\makebox(56.67,10){\scriptsize PC6}}
+\end{picture}\end{center}
+\begin{center}\begin{tabular}{lrr}\toprule
+Component & Individual variance & Cumulative variance \\\midrule
+PC1 & 38.09\% & 38.09\% \\
+PC2 & 19.11\% & 57.20\% \\
+PC3 & 16.59\% & 73.79\% \\
+PC4 & 15.68\% & 89.47\% \\
+PC5 & 9.80\% & 99.28\% \\
+PC6 & 0.72\% & 100.00\% \\
+\bottomrule\end{tabular}\end{center}
+Five components are required to reach the predeclared 95\% target, retaining 99.28\%. Four retain only 89.47\%. Thus reduction is modest (six to five features), and the result is not forced into two dimensions. The first two components explain only 57.20\%; their scatter plot is a partial view.
+
+\newpage
+\section*{5. Key insights and sensitivity}
+The all-source table contains 6,297 nonmissing PM$_{2.5}$ values: 3,387 from OpenAQ and 2,910 from PurpleAir. Their descriptive means are 32.61 and 31.04 $\mu$g/m$^3$, with medians 27.00 and 23.55. Maxima of 298.0 and 551.6 illustrate the right-skewed distributions. Unequal coverage, sensor response and uncalibrated PurpleAir CF1 values prevent interpreting the difference in means as instrument bias.
+
+\textbf{What the components describe.} The table shows unit-length component coefficients, not correlations between variables and component scores. PC1 contrasts higher humidity with lower temperature and wind speed. PC2 emphasizes PM$_{2.5}$ positively and wind speed negatively. These signs describe variation in this cohort and do not establish causal effects. A component's overall sign could be reversed without changing the solution.
+
+\begin{center}\begin{tabular}{lrrr}\toprule
+Feature & PC1 & PC2 & PC3 \\\midrule
+pm25 & 0.209 & 0.702 & -0.181 \\
+temperature & -0.580 & 0.294 & 0.331 \\
+humidity & 0.620 & -0.206 & -0.224 \\
+rain & 0.162 & -0.247 & 0.548 \\
+wind\_speed & -0.352 & -0.563 & -0.236 \\
+pressure & 0.292 & -0.021 & 0.672 \\
+\bottomrule\end{tabular}\end{center}
+
+\textbf{Sensitivity to outlier removal.} Without IQR trimming, the complete primary cohort has 1,225 records and PC1 explains 37.73\%. With trimming, it has 1,169 records and PC1 explains 38.09\%. Both require five components for 95\% variance. Only 56 of the 94 flagged primary records otherwise have all required features; the other 38 would already be excluded by completeness. This distinction avoids double-counting exclusions.
+
+The five-component reconstruction has standardized root-mean-square error 0.0851. Notebook assertions verify unit diagonal standardized covariance, total explained variance of one, selection of the smallest component count attaining 95\%, complete PCA scores and unique integrated keys.
+
+\textbf{Limits.} Missing data are not random by design, and complete-case selection can change station and time coverage. Linked weather stations represent nearby conditions rather than the sensor microenvironment. Repeated station weather in the observation-level PCA weights conditions according to available air sensors. Current sensor discovery can omit historical sensors no longer listed. The one-month window does not establish seasonal patterns. IQR exclusion emphasizes ordinary conditions and should not be used to dismiss genuine pollution events. Interpolation can reduce short-term variability, and PCA is fitted descriptively on the entire selected cohort; predictive evaluation would require a separate time-aware training protocol.
+
+\newpage
+\section*{6. Summary and reproducibility}
+The workflow preserves downloaded values, records substantive transformations and produces a 7,511-row integrated table. One PurpleAir channel pair is rejected, 615 unobserved hours become explicit, and 138 short gaps are filled. No weather feature is removed by the correlation threshold. An explicitly licensed primary cohort supports a separate outlier-filtered PCA: 1,169 complete records, six standardized features and five retained components explain 99.28\% of variation.
+
+The main outcome is improved traceability and an explicit treatment of missingness. The dimensionality reduction is modest, and coverage restrictions are important findings rather than details to conceal. Scientific plausibility checks, statistical outlier flags and cohort exclusions serve different purposes and are recorded separately.
+
+\textbf{Reproduction.} Run \texttt{air-quality\_self.ipynb} from top to bottom in a Python environment with the supplied requirements. The default uses archived API responses and Meteostat tables in \texttt{data/air\_quality\_snapshot}; API credentials are not embedded. A fresh download can be requested through the notebook setting, using environment variables for keys. The archive must accompany the notebook for offline reproduction.
+
+The executed notebook includes source links, stage counts, changed-record examples, nine diagnostic figures, covariance/correlation analysis, PCA and validation assertions. Each run writes raw/intermediate/final CSV tables, a workbook with the complete audit, editable summary charts and diagnostic images, plus numerical report metrics. The presentation is outside the scope of this deliverable.
+
+\textbf{Environment for the reported run.} Python 3.12; pandas 3.0.6; NumPy 2.5.3; Meteostat 2.1.5; Matplotlib 3.11.2; seaborn 0.13.2; XlsxWriter 3.2.9. Source responses and numeric results are saved so a reviewer can separate library changes from data changes.
+
+\subsection*{Sources}
+\small
+[1] OpenAQ. API and source-data documentation. \url{https://docs.openaq.org/}. Location query uses the bounding box and January 2024 interval stated in Section 1; sensor-specific endpoint links are in the exported source catalog.
+
+[2] OpenAQ. Licenses resource and attribution metadata. \url{https://docs.openaq.org/resources/licenses}. Primary cohort eligibility follows the license labels returned with location metadata, rather than a blanket license assumption.
+
+[3] Meteostat. Hourly station data. \url{https://dev.meteostat.net/python/api/meteostat.hourly}. Nearby-station metadata: \url{https://dev.meteostat.net/python/api/meteostat.stations.nearby}.
+
+[4] Meteostat. Data license. \url{https://dev.meteostat.net/license}. Attribution must accompany reuse; consult current provider-specific terms.
+
+[5] PurpleAir. API and historical-data access. \url{https://api.purpleair.com/}; \url{https://community.purpleair.com/t/about-the-purpleair-api/7145}. Used as a supplementary public-sensor source with authenticated access.
+\end{document}

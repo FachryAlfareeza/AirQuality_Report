@@ -1,0 +1,21 @@
+site_id,location,provider,licenses,explicit_open_license,source_url,downloaded_rows
+OpenAQ_5047,US Diplomatic Post: Jakarta South,StateAir JakartaSouth,Not stated in response,False,https://api.openaq.org/v3/sensors/5047/hours,0
+OpenAQ_5048,US Diplomatic Post: Jakarta Central,StateAir JakartaCentral,Not stated in response,False,https://api.openaq.org/v3/sensors/5048/hours,0
+OpenAQ_5077558,Jakarta South,AirNow,US Public Domain,True,https://api.openaq.org/v3/sensors/5077558/hours,740
+OpenAQ_25072,Jakarta Central,AirNow,US Public Domain,True,https://api.openaq.org/v3/sensors/25072/hours,744
+OpenAQ_1294751,Cilandek,HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/1294751/hours,0
+OpenAQ_1296386,Cilandek,HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/1296386/hours,0
+OpenAQ_6836394,Cipete,HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/6836394/hours,0
+OpenAQ_6939684,Qoryah Darussalam,AirGradient,CC BY 4.0,True,https://api.openaq.org/v3/sensors/6939684/hours,655
+OpenAQ_7325489,Jihan Fauziah Hamdi ,AirGradient,CC BY 4.0,True,https://api.openaq.org/v3/sensors/7325489/hours,127
+OpenAQ_7748548,Jakarta,Clarity,CC0 1.0,True,https://api.openaq.org/v3/sensors/7748548/hours,153
+OpenAQ_7666066,Krukut,AirGradient,CC BY 4.0,True,https://api.openaq.org/v3/sensors/7666066/hours,162
+OpenAQ_11361991,Cipete Jakarta,HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/11361991/hours,0
+OpenAQ_11385217,Cipete Jakarta,HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/11385217/hours,0
+OpenAQ_11494947,Cipete Dec,HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/11494947/hours,0
+OpenAQ_14313799,West Jakarta Mayor Office,Clean Air Catalyst,Not stated in response,False,https://api.openaq.org/v3/sensors/14313799/hours,0
+OpenAQ_14313802,East Jakarta Mayor Office,Clean Air Catalyst,Not stated in response,False,https://api.openaq.org/v3/sensors/14313802/hours,705
+OpenAQ_14313805,Rusunawa Marunda,Clean Air Catalyst,Not stated in response,False,https://api.openaq.org/v3/sensors/14313805/hours,704
+OpenAQ_16668746,Jakarta home open storage room (19-07-2026 @ 17.01),HabitatMap,Not stated in response,False,https://api.openaq.org/v3/sensors/16668746/hours,0
+OpenAQ_17000275,BMKG 1,AirGradient,CC BY 4.0,True,https://api.openaq.org/v3/sensors/17000275/hours,0
+OpenAQ_17620437,Griya Tugu Asri,AirGradient,CC BY 4.0,True,https://api.openaq.org/v3/sensors/17620437/hours,0

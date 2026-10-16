@@ -1,0 +1,355 @@
+[
+  {
+    "url": "https://api.openaq.org/v3/locations",
+    "params": {
+      "bbox": "106.689,-6.37,106.978,-6.079",
+      "parameters_id": 2,
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_001.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5047/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_002.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5048/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_003.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/5077558/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_004.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/25072/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_005.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1294751/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_006.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/1296386/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_007.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6836394/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_008.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/6939684/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_009.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7325489/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_010.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7748548/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_011.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/7666066/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_012.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11361991/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_013.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11385217/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_014.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/11494947/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_015.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313799/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_016.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313802/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_017.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/14313805/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_018.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/16668746/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_019.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/17000275/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_020.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/sensors/17620437/hours",
+    "params": {
+      "datetime_from": "2023-12-31T17:00:00+00:00",
+      "datetime_to": "2024-01-31T17:00:00+00:00",
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_021.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors",
+    "params": {
+      "fields": "name,latitude,longitude,location_type",
+      "location_type": 0,
+      "max_age": 0,
+      "nwlat": -6.079,
+      "nwlng": 106.689,
+      "selat": -6.37,
+      "selng": 106.978
+    },
+    "file": "response_022.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/50867/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_023.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/55391/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_024.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126957/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_025.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126963/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_026.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/126969/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_027.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127007/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_028.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127015/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_029.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/127605/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_030.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/152230/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_031.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/153466/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_032.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/160583/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_033.json"
+  },
+  {
+    "url": "https://api.purpleair.com/v1/sensors/192275/history",
+    "params": {
+      "start_timestamp": 1704042000,
+      "end_timestamp": 1706720400,
+      "average": 60,
+      "fields": "pm2.5_cf_1_a,pm2.5_cf_1_b"
+    },
+    "file": "response_034.json"
+  },
+  {
+    "url": "https://api.openaq.org/v3/locations",
+    "params": {
+      "bbox": "106.689,-6.37,106.978,-6.079",
+      "parameters_id": 2,
+      "limit": 1000,
+      "page": 1
+    },
+    "file": "response_035.json"
+  }
+]

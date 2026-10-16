@@ -1,0 +1,130 @@
+{
+  "start_inclusive_jakarta": "2025-01-01 00:00:00+07:00",
+  "end_exclusive_jakarta": "2026-01-01 00:00:00+07:00",
+  "shape": [
+    41629,
+    12
+  ],
+  "raw_rows": {
+    "openaq_raw": 24316,
+    "purpleair_raw": 21024,
+    "weather_raw": 38724
+  },
+  "clean_rows": {
+    "openaq_clean": 21356,
+    "purpleair_clean": 20273,
+    "weather": 38724
+  },
+  "row_counts": [
+    {
+      "stage": "Raw",
+      "rows": 45340
+    },
+    {
+      "stage": "Cleaned",
+      "rows": 41629
+    },
+    {
+      "stage": "Filtered",
+      "rows": 41629
+    },
+    {
+      "stage": "Hourly",
+      "rows": 41629
+    }
+  ],
+  "missing": {
+    "source": 0,
+    "site_id": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "time": 0,
+    "pm25": 0,
+    "station_id": 909,
+    "temperature": 909,
+    "humidity": 909,
+    "rain": 1093,
+    "wind_speed": 909,
+    "pressure": 909
+  },
+  "source_summary": {
+    "count": {
+      "OpenAQ": 21356,
+      "PurpleAir": 20273
+    },
+    "mean": {
+      "OpenAQ": 38.401,
+      "PurpleAir": 38.434
+    },
+    "median": {
+      "OpenAQ": 34.0,
+      "PurpleAir": 30.95
+    },
+    "min": {
+      "OpenAQ": 0.0,
+      "PurpleAir": 0.0
+    },
+    "max": {
+      "OpenAQ": 290.0,
+      "PurpleAir": 767.95
+    }
+  },
+  "correlation": {
+    "temperature": {
+      "temperature": 1.0,
+      "humidity": -0.940967,
+      "rain": -0.041408,
+      "wind_speed": 0.283585,
+      "pressure": -0.291033
+    },
+    "humidity": {
+      "temperature": -0.940967,
+      "humidity": 1.0,
+      "rain": 0.056375,
+      "wind_speed": -0.335868,
+      "pressure": 0.260596
+    },
+    "rain": {
+      "temperature": -0.041408,
+      "humidity": 0.056375,
+      "rain": 1.0,
+      "wind_speed": 0.120813,
+      "pressure": -0.08259
+    },
+    "wind_speed": {
+      "temperature": 0.283585,
+      "humidity": -0.335868,
+      "rain": 0.120813,
+      "wind_speed": 1.0,
+      "pressure": -0.357817
+    },
+    "pressure": {
+      "temperature": -0.291033,
+      "humidity": 0.260596,
+      "rain": -0.08259,
+      "wind_speed": -0.357817,
+      "pressure": 1.0
+    }
+  },
+  "dropped": [],
+  "weather_station": "96745",
+  "weather_station_name": "Jakarta / Observatory",
+  "weather_hours": 8627,
+  "stations_with_data": 5,
+  "air_first_jakarta": "2025-01-01 00:00:00+07:00",
+  "air_last_jakarta": "2025-12-31 23:00:00+07:00",
+  "months_present": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12"
+  ]
+}
